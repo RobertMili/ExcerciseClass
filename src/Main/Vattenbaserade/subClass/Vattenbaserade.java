@@ -1,9 +1,8 @@
-package Main;
+package Main.Vattenbaserade.subClass;
 
 import Main.SuperClass;
 
 import java.util.Random;
-
 public class Vattenbaserade extends SuperClass {
     public int GPS;
 

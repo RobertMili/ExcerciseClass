@@ -1,10 +1,8 @@
 package Main;
 
-import Main.LandbaseradeFordon;
-
 public class Car extends LandbaseradeFordon {
 
-    public Car(int weight, int price, String owner, int km) {
+    public Car(int weight, int price, Person owner, int km) {
         super(weight, price, owner, km);
     }
 
@@ -28,7 +26,7 @@ public class Car extends LandbaseradeFordon {
     }
 
     @Override
-    public String getOwner() {
+    public Person getOwner() {
         return super.getOwner();
     }
 
@@ -43,8 +41,8 @@ public class Car extends LandbaseradeFordon {
     }
 
     @Override
-    public void setOwner(String owner) {
-        super.setOwner(owner);
+    public void setOwner(String name) {
+        super.setOwner(name);
     }
 
     @Override

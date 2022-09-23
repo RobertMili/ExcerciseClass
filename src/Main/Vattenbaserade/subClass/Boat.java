@@ -1,4 +1,6 @@
-package Main;
+package Main.Vattenbaserade.subClass;
+
+import Main.Person;
 
 public class Boat extends Vattenbaserade {
 
@@ -33,7 +35,7 @@ public class Boat extends Vattenbaserade {
     }
 
     @Override
-    public String getOwner() {
+    public Person getOwner() {
         return super.getOwner();
     }
 }

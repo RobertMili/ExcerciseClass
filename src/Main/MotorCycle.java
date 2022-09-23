@@ -1,10 +1,8 @@
 package Main;
 
-import Main.LandbaseradeFordon;
-
 public class MotorCycle extends LandbaseradeFordon {
 
-    public MotorCycle(int weight, int price, String owner, int km) {
+    public MotorCycle(int weight, int price, Person owner, int km) {
         super(weight, price, owner, km);
     }
 
@@ -33,7 +31,7 @@ public class MotorCycle extends LandbaseradeFordon {
     }
 
     @Override
-    public String getOwner() {
+    public Person getOwner() {
         return super.getOwner();
     }
 }

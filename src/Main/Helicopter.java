@@ -1,7 +1,5 @@
 package Main;
 
-import Main.Flyganede;
-
 public class Helicopter extends Flyganede {
 
     @Override
@@ -42,7 +40,7 @@ public class Helicopter extends Flyganede {
     }
 
     @Override
-    public String getOwner() {
+    public Person getOwner() {
         return super.getOwner();
     }
 }

@@ -1,6 +1,8 @@
 package Main;
 
- public class Main {
+import Main.Vattenbaserade.subClass.Boat;
+
+public class Main {
 
     public static void main(String[] args) {
 
@@ -43,18 +45,18 @@ package Main;
         Buyer VanjaBuyer = new Buyer("Vanja ", 25,"Buyer", 1000);
         Buyer robertBuyer = new Buyer("Robert", 23,"buyer", 1000);
         Selling selling = new Selling("selling", 30, "Seller",1000);
-        Selling Alma = new Selling("Alma", 35,"seller", 1000);
+        Selling alma = new Selling("alma", 35,"seller", 1000);
 
         Dealer dealer = new Dealer("RobertDealer", 35, "Dealer", 1000);
 
-        LandbaseradeFordon bmw = new LandbaseradeFordon(200,1000,"Alma",1000);
+        LandbaseradeFordon bmw = new LandbaseradeFordon(200,1000,alma,1000);
 
         selling.line();
-        selling.selling(bmw,Alma,robertBuyer,dealer);
+        selling.selling(bmw,alma,robertBuyer,dealer);
 
-        Car audi = new Car(200,1000,"Alma",1000);
+        Car audi = new Car(200,1000,alma,1000);
         audi.line();
-        Alma.selling(audi,Alma,VanjaBuyer,dealer);
+        alma.selling(audi,alma,VanjaBuyer,dealer);
 
 
 

@@ -5,12 +5,12 @@ import java.util.Objects;
 public abstract class SuperClass {
          int weight;
         int price;
-        String owner;
+        Person owner;
 
-        public SuperClass(int weight, int price, String owner) {
+        public SuperClass(int weight, int price, Person owner) {
                 this.weight = weight;
                 this.price = price;
-                this.owner = owner;
+
         }
 
         public void setWeight(int weight) {
@@ -21,7 +21,7 @@ public abstract class SuperClass {
                 this.price = price;
         }
 
-        public void setOwner(String owner) {
+        public void setOwner(String name) {
                 this.owner = owner;
         }
 
@@ -36,7 +36,7 @@ public abstract class SuperClass {
                 return price;
         }
 
-        public String getOwner() {
+        public Person getOwner() {
                 return owner;
         }
         public void line(){
